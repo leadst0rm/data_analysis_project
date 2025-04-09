@@ -109,6 +109,3 @@ print("\nLDA Topics:")
 print_topics(LDA_model, TF_IDF_vectorizer)
 print("\nNMF Topics:")
 print_topics(NMF_model, TF_IDF_vectorizer)
-
-# Save results
-complaints.to_csv('processed_complaints.csv', index=False)
