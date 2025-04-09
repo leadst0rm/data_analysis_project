@@ -1,4 +1,5 @@
 import re
+import nltk
 import pandas as pd
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
@@ -7,6 +8,10 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.decomposition import NMF
+
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 def preprocess_text(raw_text):
 
@@ -104,3 +109,6 @@ print("\nLDA Topics:")
 print_topics(LDA_model, TF_IDF_vectorizer)
 print("\nNMF Topics:")
 print_topics(NMF_model, TF_IDF_vectorizer)
+
+# Save results
+complaints.to_csv('processed_complaints.csv', index=False)
