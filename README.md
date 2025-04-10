@@ -11,7 +11,7 @@ Current project aims to show how Natural Language Processing (NLP) technqiues ca
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
-3. Run the script:
+3. Run the script (make sure to run the script from the same directory as complaints.csv.):
    ```bash
    python topic_extractor.py
 NB! Consider the text file size when running the code (91 MB)
