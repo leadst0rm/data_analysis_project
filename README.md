@@ -14,3 +14,4 @@ Current project aims to show how Natural Language Processing (NLP) technqiues ca
 3. Run the script:
    ```bash
    python topic_extractor.py
+NB! Consider the text file size when running the code (91 MB)
